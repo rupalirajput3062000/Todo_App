@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <title>Todo App</title>
+    
+</head>
+<body>
+    <!-- <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid ">
+          <span class="navbar-brand mb-0 h1 ">TODO APP  <i class="fa fa-edit"></i> </span>
+        </div>
+        <form class="form-inline my-2 my-lg-0">
+           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+        <!-- </form> -->
+    <!-- </nav> --> 
+
+    <nav class=" container-fluid navbar navbar-dark bg-dark">
+      <div class=" container-fluid row">
+        <div class="col-md-6 ml-5">
+          <a class="navbar-brand">TODO APP  <i class="fa fa-edit"></i></a>
+        </div>
+        <div class="col-md-3">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search" id="searchBar">
+        </div>
+      </div>
+      
+    </nav>
+
+    
+      <section class="container-fluid">
+        <!-- <form class="container-fluid"> -->
+            <div class="container-fluid row p-3 bg-light">
+              <div class="col-7">
+                <input type="text" class="form-control" placeholder="Enter TODO.." id="addTodo">
+                <input type="hidden" name="hidden" id="hideEle">
+              </div>
+              <div class="col-5">
+                <button type="submit" class="btn btn-primary ml-md-2" id="addTaskBtn">Add Task</button>
+                <button type="submit" class="btn btn-primary ml-md-2" id="addSaveBtn" style="display: none;">Save Task</button>
+                <button type="submit" class="btn btn-danger ml-md-2" id="addDeleteBtn">Delete All</button>
+              </div>
+            </div>
+          <!-- </form> -->
+          <div class="container-fluid">
+            <table class="table table-striped container-fluid " >
+                <tbody id="tableContent">
+                    <tr></tr>
+                </tbody>
+                
+                
+            </table>
+          </div>
+          
+
+      </section>
+      <script src="script.js"></script>
+</body>
+</html>
